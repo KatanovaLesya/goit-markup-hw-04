@@ -350,14 +350,7 @@ img
     height: 40px;
     padding: 12px;
     background-color: #4D5AE5;
-    border-radius: 30%
-}
-
-.team-icons svg {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    /* Забезпечує збереження пропорцій іконок */
+    border-radius: 50%
 }
 
 .team-icons use {
