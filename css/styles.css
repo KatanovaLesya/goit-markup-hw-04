@@ -161,22 +161,29 @@ img
 
 .hero
 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 188px;
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    background: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url('../images/people-office1.jpg');
+  
+    background-position: center;
+   
 }
 
 .hero .container
 {
     display: flex;
     flex-direction: column;
-   
     margin: 0 auto;
     align-items: center;
     justify-content: center;
     text-align: center;
-  
-   
+    
+    
     
 }
 .hero-title {
@@ -212,6 +219,27 @@ img
 {
     background-color: #404bbf;
 }
+.features-image
+{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content:center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    
+    
+}
+.features-icons
+{
+    width: 64px;
+    height: 64px;
+    
+
+}
+
 .features-title {
     color: rgb(0, 0, 0, 0)
 }
@@ -304,6 +332,37 @@ img
    
 }
 
+.team-contact{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    
+}
+
+.team-icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    background-color: #4D5AE5;
+    border-radius: 30%
+}
+
+.team-icons svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Забезпечує збереження пропорцій іконок */
+}
+
+.team-icons use {
+    fill: white;
+}
 .portfolio
 {
     background-color:#FFFFFF;
