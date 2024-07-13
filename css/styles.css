@@ -11,7 +11,7 @@ body{
   background-color: #fff;
   font-size: 16px;
 }
-header{
+.header-top .container{
     
     border-bottom: 1px solid #e7e9fc;
 }
@@ -118,6 +118,23 @@ img
     color: #2e2f42;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.nav-link.hilight {
+    color: #404bbf;
+}
+
+.nav-link.hilight::after
+{
+content: '';
+display: block;
+background: #404bbf;
+border-radius: 2px;
+width: 100%;
+height: 4px;
+position: relative;
+top: 23px;
+
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -307,7 +324,10 @@ img
     display: flex;
     gap:24px;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
+
 .team-item
 {
     text-align: center;
@@ -373,7 +393,14 @@ img
 {
     text-align: center;
     
+} 
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-list
 {
     display: flex;
@@ -381,7 +408,36 @@ img
     column-gap: 24px;
     row-gap: 48px;  
 }
+.portfolio-wrapper
+{
+    position: relative;
+    overflow: hidden;
+    
+}
 
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    top:0;
+    left:0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    text-align: start;
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+.portfolio-wrapper:hover .overlay {
+    transform: translateY(0);
+}
 .portfolio-title 
 {  
     font-size: 36px;
