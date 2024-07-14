@@ -293,6 +293,7 @@ bottom: -1px;
     display: flex;
     gap: 24px;
     justify-content: center;
+    height: 112px;
 }
 
 .features-item
@@ -475,7 +476,7 @@ bottom: -1px;
     text-align: start;
     background-color: #4d5ae5;
     transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-wrapper:hover .overlay {
     transform: translateY(0);
