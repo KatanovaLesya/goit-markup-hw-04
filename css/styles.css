@@ -687,8 +687,7 @@ bottom: -1px;
     overflow-y: auto;
     opacity: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform, opacity;
-    transition-delay: 0s;
+    transform: translate(-50%, -50%);
 }
 
 .modal-overlay.is-open .modal{
@@ -742,6 +741,10 @@ bottom: -1px;
 
 .btn-close:focus svg {
     fill: white;
+}
+
+.icon-close{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-container{
@@ -803,7 +806,7 @@ bottom: -1px;
     fill: #4d5ae5;
 }
     
-.form-container .form-label .user-comment{
+.user-comment-container{
     margin-bottom: 16px;
 }
 .form-input-comment {
@@ -882,16 +885,15 @@ input[type='checkbox']:focus-visible+.form-desc>.form-checkbox {
     text-decoration: underline;
     cursor: pointer;
 }
-.form-button-container{
-    display: flex;
+
+.form-button {
+    display: block;
     align-items: center;
     justify-content: center;
-    
-}
-.form-button {
     border: none;
+    font-family: "Roboto", sans-serif;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
+    background-color: #4d5ae5;
     color: #fff;
     cursor: pointer;
     border-radius: 4px;
@@ -905,6 +907,7 @@ input[type='checkbox']:focus-visible+.form-desc>.form-checkbox {
     color: #fff;
     margin-bottom: 24px;
     margin-top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button:hover {
