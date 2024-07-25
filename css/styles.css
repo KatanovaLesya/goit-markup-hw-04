@@ -687,7 +687,6 @@ bottom: -1px;
     overflow-y: auto;
     opacity: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translate(-50%, -50%);
 }
 
 .modal-overlay.is-open .modal{
@@ -859,17 +858,17 @@ bottom: -1px;
     margin-right:8px;
     margin-top: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, background-color;
+    transition-property: background-color, border, fill;
     fill: transparent;
 }
 
-input[type='checkbox']:checked+.form-desc>.form-checkbox {
+input[type='checkbox']:checked + .form-desc > .form-checkbox {
     background-color: #404bbf;
     border: none;
     fill:#404bbf;
 }
 
-input[type='checkbox']:focus-visible+.form-desc>.form-checkbox {
+input[type='checkbox']:focus-visible + .form-desc > .form-checkbox {
     box-shadow: 0 0 0 3px #404bbf / 25%;
    
 }
